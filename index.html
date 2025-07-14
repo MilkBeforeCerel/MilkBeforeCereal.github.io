@@ -19,30 +19,45 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark-green  navbar-dark justify-content-between">
+<nav class="navbar navbar-expand-md bg-dark-green navbar-dark justify-content-between">
   <div class="container-fluid">
-    <div class=" text-white p-3 f-5">
-        <a class="nav-link active text-center" href="index.html"><h4><img src="images/MechTempLogo.png" class="rounded" alt="MechLogo">MCTR Club</h4></a>
+    <a class="navbar-brand text-white d-flex align-items-center" href="index.html">
+      <img src="images/MechTempLogo.png" class="rounded me-2" alt="MechLogo" style="height: 40px;">
+      <h4 class="mb-0">MCTR Club</h4>
+    </a>
+
+    <!-- Hamburger button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto fs-5">
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="getInvolved.html">Get involved</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="ourTeam.html">Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contactUs.html">Contact Us</a>
+        </li>
+      </ul>
     </div>
-    <ul class="navbar-nav fs-5 ">
-      <li class="nav-item">
-        <a class="nav-link active" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="services.html">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="getInvolved.html">Get involved</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="ourTeam.html">Our Team</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="contactUs.html">Contact Us</a>
-      </li>
-    </ul>
   </div>
 </nav>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <!-- Bootstrap CSS (make sure you include this in your HTML head) -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -116,21 +131,27 @@
   </div>
 </section>
 
-<div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Made using Bootstrap | Copyright © 2025 University of Alberta Mechatronics and Robotics Engineering Students Society. All rights reserved.</p>
-  <p>Unknown, University of Alberta, Edmonton, AB T6G 1T6</p>
-    <p>Follow us on our social platforms to stay updated.</p>
-  <div class="d-flex justify-content-center gap-3">
-    <a href="https://instagram.com/YOUR_HANDLE">
-      <img src="images/instagramLogo.svg.png" class="rounded" style="width: 30px; height: auto;" alt="instagram">
-    </a>
-    <a href="https://discord.gg/YOUR_INVITE">
-      <img src="images/discordlogo.jpg" class="rounded" style="width: 30px; height: auto;" alt="discord">
-    </a>
-    <a href="https://linkedin.com/YOUR_PAGE">
-      <img src="images/LinkedInlogo.png" class="rounded" style="width: 30px; height: auto;" alt="linkedin">
-    </a>
-</div>
+<body class="d-flex flex-column min-vh-100">
+  <main class="flex-grow-1">
+    <!-- Your main page content here -->
+  </main>
 
+  <footer class="mt-auto p-4 bg-dark text-white text-center">
+    <p>Made using Bootstrap | Copyright © 2025 University of Alberta Mechatronics and Robotics Engineering Students Society. All rights reserved.</p>
+    <p>Unknown, University of Alberta, Edmonton, AB T6G 1T6</p>
+    <p>Follow us on our social platforms to stay updated.</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://instagram.com/YOUR_HANDLE">
+        <img src="images/instagramLogo.svg.png" class="rounded" style="width: 30px; height: auto;" alt="instagram">
+      </a>
+      <a href="https://discord.gg/YOUR_INVITE">
+        <img src="images/discordlogo.jpg" class="rounded" style="width: 30px; height: auto;" alt="discord">
+      </a>
+      <a href="https://linkedin.com/YOUR_PAGE">
+        <img src="images/LinkedInlogo.png" class="rounded" style="width: 30px; height: auto;" alt="linkedin">
+      </a>
+    </div>
+  </footer>
 </body>
+
 </html>
