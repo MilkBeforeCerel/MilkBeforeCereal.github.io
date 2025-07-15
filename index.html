@@ -2,140 +2,180 @@
 <html lang="en">
 <head>
   <title>Mechatronics and Robotics Engineering Club</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
+    .bg-dark-green {
+      background-color: #104c34;
+    }
 
-  .bg-dark-green {
-    background-color: #104c34;
-  }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .newsletter-box {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      max-width: 600px;
+      margin: 2rem auto 0;
+    }
+
+    .about-icon {
+      font-size: 2rem;
+      color: #104c34;
+    }
+
+    footer a img {
+      transition: transform 0.3s;
+    }
+    footer a img:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
-<body>
-
-<nav class="navbar navbar-expand-md bg-dark-green navbar-dark justify-content-between">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white d-flex align-items-center" href="index.html">
-      <img src="images/MechTempLogo.png" class="rounded me-2" alt="MechLogo" style="height: 40px;">
-      <h4 class="mb-0">MCTR Club</h4>
-    </a>
-
-    <!-- Hamburger button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible menu -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto fs-5">
-        <li class="nav-item">
-          <a class="nav-link active" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="getInvolved.html">Get involved</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="ourTeam.html">Our Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="contactUs.html">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<!-- Bootstrap CSS (make sure you include this in your HTML head) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Carousel -->
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/engineeringaerial.jpg" class="d-block w-100" alt="Slide 1" style="height: 700px; object-fit: cover;">
-    </div>
-    <div class="carousel-item">
-      <img src="images/tempimage1.jpg" class="d-block w-100" alt="Slide 2" style="height: 700px; object-fit: cover;">
-    </div>
-    <div class="carousel-item">
-      <img src="images/tempimage2.jpg" class="d-block w-100" alt="Slide 3" style="height: 700px; object-fit: cover;">
-    </div>
-  </div>
-
-  <!-- Controls (prev/next) -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<section class="text-center py-5 bg-light">
-  <h2>Get Involved Today</h2>
-  <p class="lead">Join our community or Subscribe to our newsletter</p>
-  <a href="#" class="btn btn-success">Join the Team</a> 
-  <section class="container py-5">
-   <form class="row justify-content-center g-3">
-    <div class="col-auto">
-      <input type="email" class="form-control" placeholder="Your email">
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-success mb-3">Subscribe</button>
-    </div>
-  </form>
-</section>
-</section>
-
-<section class="container py-5">
-  <h2>About Us</h2>
-  <p>
-    The Mechatronics and Robotics Students' Society at the University of Alberta
-    connects students, promotes professional development, and organizes events that
-    bring our community together.
-  </p>
-</section>
-
-<section class="container py-5">
-  <h2 class="text-center mb-4">Upcoming Events</h2>
-  <div class="ratio ratio-16x9">
-    <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FEdmonton"
-      style="border: 0"
-      frameborder="0"
-      scrolling="no">
-    </iframe>
-  </div>
-</section>
-
 <body class="d-flex flex-column min-vh-100">
-  <main class="flex-grow-1">
-    <!-- Your main page content here -->
-  </main>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md bg-dark-green navbar-dark justify-content-between">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white d-flex align-items-center" href="index.html">
+        <img src="images/MechTempLogo.png" class="rounded me-2" alt="MechLogo" style="height: 40px;" />
+        <h4 class="mb-0">MCTR Club</h4>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto fs-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="getInvolved.html">Get involved</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ourTeam.html">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel with overlay text -->
+  <div id="myCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/engineeringaerial.jpg" class="d-block w-100" alt="Slide 1" style="height: 700px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/tempimage1.jpg" class="d-block w-100" alt="Slide 2" style="height: 700px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/tempimage2.jpg" class="d-block w-100" alt="Slide 3" style="height: 700px; object-fit: cover;">
+      </div>
+    </div>
+
+    <div class="hero-text text-center">
+      <h1 class="display-4 fw-bold">Welcome to MCTR</h1>
+      <p class="lead">Innovation, Collaboration, Growth</p>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Newsletter & CTA -->
+  <section class="text-center py-5 bg-light">
+    <h2>Get Involved Today</h2>
+    <p class="lead">Join our community or Subscribe to our newsletter</p>
+    <a href="#" class="btn btn-success mb-4">Join the Team</a>
+    <div class="newsletter-box">
+      <form class="row g-3 justify-content-center">
+        <div class="col-auto flex-grow-1">
+          <input type="email" class="form-control w-100" placeholder="Your email">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-success mb-3">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="container py-5 text-center">
+    <h2>About Us</h2>
+    <div class="mb-4">
+      <i class="bi bi-robot about-icon"></i>
+    </div>
+    <p class="mx-auto" style="max-width: 800px;">
+      The Mechatronics and Robotics Students' Society at the University of Alberta connects students, promotes professional development, and organizes events that bring our community together.
+    </p>
+  </section>
+
+  <!-- Motto/Quote? -->
+  <figure class="text-center">
+  <blockquote class="blockquote">
+    <p>"Engineering the future, one project at a time."</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    MCTR Club Motto
+  </figcaption>
+</figure>
+
+
+  <!-- Calendar -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Upcoming Events</h2>
+    <div class="card shadow rounded overflow-hidden">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FEdmonton"
+          style="border: 0;" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="mt-auto p-4 bg-dark text-white text-center">
     <p>Made using Bootstrap | Copyright © 2025 University of Alberta Mechatronics and Robotics Engineering Students Society. All rights reserved.</p>
     <p>Unknown, University of Alberta, Edmonton, AB T6G 1T6</p>
@@ -152,6 +192,7 @@
       </a>
     </div>
   </footer>
-</body>
 
+</body>
 </html>
+
